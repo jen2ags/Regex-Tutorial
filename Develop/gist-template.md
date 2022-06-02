@@ -24,6 +24,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+An anchor symbol in a regex are like declarations for a specific position in the string of characters. Anchors such as the ^ and $, determine the beginning and end of the string that will be created. The ^ determines where the beginning of the string starts. The $ occurs at the end of the string to show where the string ends. 
+
 ### Quantifiers
 
 ### OR Operator

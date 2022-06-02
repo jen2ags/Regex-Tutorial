@@ -51,6 +51,19 @@ The + means that these characters can occur one or more times. The {2,6} means t
 
 ### Character Classes
 
+Character classes tell the regex engine what type of character can be used when matching. They will appear inside the [] (square brackets).
+
+There are many different character classes. They can include, letters, numbers, and any symbol as long as they are included inside the square brackets. 
+
+The following are the different types of character classes that are found in our email matching regex:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+[a-z] Means that any lowercase letter from a-z can be used.
+[0-9] Means that any number between 0-9 can be used.
+[_\.-] Means that any of these symbols may be used. The \. means that this is an excaped character and just means a regular "."
+[\d] Means that any digit may be used.
+
 ### Flags
 
 ### Grouping and Capturing

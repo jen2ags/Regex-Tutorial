@@ -68,7 +68,24 @@ The following are the different types of character classes that are found in our
 
 ### Grouping and Capturing
 
+Capturing groups use () to group together character classes and quantifiers so they will apply to the matching inside the parenthesis. As you can see, in the email matching regex, we have 3 different groups:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+([a-z0-9_\.-]+) Capturing Group #1
+
+([\da-z\.-]+) Capturing Group #2
+
+([a-z\.]{2,6}) Capturing Group #3
+
+
 ### Bracket Expressions
+
+Brackets tell the regex engine what it should be looking for to match. The bracket expression contains your character classes. For exampl, from our email matching regex:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+[a-z0-9_\.-] This bracket expression tells the regex engine that it can look for any letter a-z, any number 0-9, underscore (_), dot (\.), and dash (-).
 
 ### Greedy and Lazy Match
 

@@ -35,6 +35,18 @@ The code between the anchors is what the action is attempting to match.
 
 ### Quantifiers
 
+Quantifiers will tell the regex engine exactly how many occurances of characters, character class, or group there will be. 
+
+The following are the different types of regex quantifiers that you can see in any regex:
+
+{ n }, { n , }, { n , m }, *, +, ?
+
+For example, in the email matching regex, the quantifiers used are + and { n, m }.
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+The + means that these characters can occur one or more times. The {2,6} means that the characters within the bracket must generate at two characters but at most can only generate six characters.
+
 ### OR Operator
 
 ### Character Classes
